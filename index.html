@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freelance Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Freelance Marketplace</h1>
+    <input type="text" id="search" placeholder="Search freelancers by skill..." onkeyup="filterFreelancers()">
+  </header>
+
+  <main id="freelancers" class="freelancers"></main>
+
+  <section class="post-job">
+    <h2>Post a Job</h2>
+    <form onsubmit="submitJob(event)">
+      <input type="text" id="jobTitle" placeholder="Job Title" required>
+      <input type="text" id="jobCompany" placeholder="Company Name" required>
+      <textarea id="jobDescription" placeholder="Job Description" required></textarea>
+      <button type="submit">Post Job</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
